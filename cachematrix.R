@@ -46,7 +46,7 @@ cacheSolve <- function(x, ...) {
     
     # Get raw matrix from 'x', compute the solution, and cache the result.
     data <- x$get()
-    solution <- solve(data)
+    solution <- solve(data, ...)
     x$setsolution(solution)
     
     # Return the computed solution
