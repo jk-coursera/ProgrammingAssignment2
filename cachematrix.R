@@ -1,5 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Solving large matrices is computationally expensive.
+## Here, we make a special structure that allows us to
+## cache the result of calling 'solve()' on a matrix.
+## This is done by leveraging the lexical scoping rules of
+## the R language.
 
 ## Wraps matrix 'x' with caching functionality.
 makeCacheMatrix <- function(x = matrix()) {
